@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe Unit do 
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "is valid with a unique name" do 
+    unit = Unit.new( name: 'BG Biu' ) 
+    expect(unit).to be_valid 
+  end 
 end
-RSpec.describe Unit, type: :model do
